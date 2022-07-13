@@ -1,0 +1,851 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+.logo{
+    font-family: 'Lily Script One', cursive;
+    font-size: 4.5rem;
+}
+
+.logo a{
+    text-decoration: none;
+    color: indigo;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+
+header{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container{
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px dotted rgba(255,255,255,.4);
+}
+
+.material-icons{
+    font-size: 2.7rem;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+
+.close i{
+    color: rgba(0,0,0,.6);
+}
+
+.nav-list{
+    width: 25rem;
+    height: 100vh;
+    background-color: burlywood;
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+.nav-list.active{
+    right: 0;
+}
+
+.close{
+    position: absolute;
+    top: 2.5rem;
+    left: 1.5rem;
+}
+
+.nav-items{
+    margin: 2rem 0;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: rgba(0,0,0,.8);
+    font-weight: 600;
+}
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("jeans.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main-message{
+    width: 100%;
+    max-width: 50rem;
+    color: white;
+    text-transform: uppercase;
+    transform: translateY(20%);
+}
+
+.text{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 5rem;
+    color: sandybrown;
+}
+.sub-message p{
+    font-size: 150%;
+    font-weight: 500;
+    text-transform: lowercase;
+    margin: 2rem 3rem 0 0;
+}
+
+.video-message p{
+    color: sandybrown;
+    margin: 4rem 2rem 0 0;
+}
+
+.video-message i{
+    color: #121212;
+    font-size: 4rem;
+    font-weight: 100;
+    margin-left: 2.5rem;
+}
+
+.btn{
+    background-color: chocolate;
+    display: inline-block;
+    margin: 2rem 0 2rem 0;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    border-radius: 7px;
+    transition: background-color 650ms;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: sandybrown;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.title h1{
+    font-size: 2.5rem;
+    font-family: 'Aldrich', sans-serif;
+    text-transform: uppercase;
+}
+
+.title p{
+    font-size: 1.5rem;
+}
+
+.popular-destination-grid-item img,
+.popular-destination-grid-item1 img,
+.popular-destination-grid-item2 img,
+.popular-destination-grid-item3 img{
+    width: 90%;
+    transform: translateX(5%);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.popular-destination-grid p{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 120%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.popular-destination-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: .1rem;
+}
+
+.cat{
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.categories  p{
+    text-align: center;
+    color: #fafafa;
+}
+
+.categories i{
+    color: sandybrown;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0 .5rem 0;
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+    border-radius: 5px;
+}
+
+.categories-item{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("beach.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.categories-item1{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("paris.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.categories-item2{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("animated_china.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.categories-item3{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("camping.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.categories-item4{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("uphillhiking.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.categories-item5{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("festival.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.categories-item6{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("mountainclimbing.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.categories-item7{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("ski.jpg") center no-repeat;
+    background-size: cover;
+}
+
+
+.categories{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-gap: .1rem;
+    align-items: center;
+}
+
+.journey{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 4.8rem;
+    color: sandybrown;
+    text-align: center;
+    opacity: 0;
+    animation: fadeDown .7s forwards;
+}
+
+.animate-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border-bottom{
+    width: 18rem;
+    border-bottom: .3rem groove rgba(0,0,0,.6);
+    opacity: 0;
+    animation: fadeRight .9s forwards;
+
+}
+
+.first-letter{
+    font-size: 6rem;
+}
+
+.with-us{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+    color: #fafafa;
+    text-align: center;
+    letter-spacing: .2rem;
+    opacity: 0;
+    animation: fadeUp 1s forwards;
+    animation-delay: .2s;
+}
+
+.btw{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("nighttime.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.lets-go{
+    min-height: 65vh;
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.end img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.start{
+    grid-column: span 2;
+}
+
+.end{
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-gap: .5rem;
+}
+
+
+.end-first-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.end-second-image {
+    grid-column: 2 / 3;
+}
+
+.end-third-image {
+    grid-column: 1 / 3;
+}
+
+
+.end-first-image{
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%),
+    url("germany-tour.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.end-second-image {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .2) 100%),
+    url("great-wall-of-china.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+}
+
+.end-third-image{
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(135deg, rgba(0,0,0,.3) 0%, rgba(0,0,0,.2) 100%),
+    url("cloud_animated.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+}
+
+.mountain{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 4.8rem;
+    color: sandybrown;
+    text-align: center;
+    animation: fadeLeft .7s forwards;
+}
+
+.both{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line{
+    width: 18rem;
+    max-width: 100%;
+    border-bottom: .4rem groove #121212;
+    animation: scale .8s forwards;
+
+}
+
+
+.climbing{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2rem;
+    color: #fafafa;
+    text-align: center;
+    letter-spacing: .2rem;
+    animation: fadeRight 7s forwards;
+}
+
+.mountain-image{
+    background: linear-gradient(135deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,.3) 100%),
+    url("purple_night.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.end-fourth-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.end-fifth-image {
+    grid-column: 2 / 3;
+}
+
+.end-sixth-image {
+    grid-column: 1 / 3;
+}
+
+
+.end-fourth-image{
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(135deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%),
+    url("slovenia.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: end;*/
+    align-items: end;
+}
+
+.end-fifth-image{
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,.3) 0%, rgba(0,0,0,.2) 100%),
+    url("pale-mountains.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+
+
+.end-sixth-image{
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(135deg, rgba(0,0,0,.3) 0%, rgba(0,0,0,.2) 100%),
+    url("mount-everest.jpg") center no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+}
+
+.end h2{
+    font-family: 'Aldrich', sans-serif;
+}
+
+.end p{
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    padding: 7.9rem 0;
+    background-color: #121212;
+    color: #fafafa;
+    text-align: center;
+    position: relative;
+
+}
+
+.back-to-top{
+    width: 7rem;
+    height: 7rem;
+    background-color: #121212;
+    position: absolute;
+    top: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.back-to-top i{
+    display: block;
+    color: #fafafa;
+    font-size: 2rem;
+    padding: 2rem;
+    animation: up 2s infinite;
+}
+
+.footer-content{
+    overflow: hidden;
+}
+
+.footer-content h1{
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 3rem;
+}
+
+.footer-content p{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+    line-height: 2;
+}
+
+.social-icons{
+    list-style-type: none;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i{
+    font-size: 2.3rem;
+    color: #fafafa;
+    padding: .8rem 2rem;
+    opacity: .5;
+    transition: color .5s;
+}
+
+.social-icons i:hover,
+.social-icons i:focus{
+    color: sandybrown;
+}
+
+.newsletter h1{
+    font-size: 1.6rem;
+}
+
+.newsletter-form{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+.newsletter-input{
+    width: 100%;
+    max-width: 25rem;
+    padding: 1rem;
+    border-radius: .4rem;
+    border: none;
+}
+
+.newsletter-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1px .6rem;
+}
+
+.newsletter-btn i{
+    color: sandybrown;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -4rem;
+}
+
+.copyright{
+    width: 100%;
+    max-width: 100rem;
+    /*background-color: #d7d4ed;*/
+    text-align: center;
+    color: #fafafa;
+}
+
+
+/*Media queries*/
+@media screen and (min-width: 900px){
+    section{
+        padding: 3.5rem;
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .nav-list{
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+
+    .nav-items{
+        margin: 0 1.6rem;
+    }
+
+    .nav-link{
+        font-size: 1.4rem;
+        color: #fafafa;
+        font-weight: initial;
+    }
+
+    .nav-items:last-child{
+        margin-right: 1.5rem;
+    }
+
+    .current{
+        position: relative;
+    }
+
+    .current::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: sandybrown;
+        left: 0;
+        bottom: -.1rem;
+    }
+
+    .main-message p{
+        font-size: 1.7rem;
+    }
+
+    .main-message h2{
+        font-size: 1.8rem;
+    }
+
+    .text{
+        font-size: 5.5rem;
+    }
+
+    .title h1{
+        font-size: 3rem;
+    }
+
+    .title p{
+        font-size: 1.7rem;
+        margin-top: .5rem;
+    }
+
+    .cat{
+        font-size: 2rem;
+    }
+
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        grid-gap: 0;
+        margin-left: 2rem;
+    }
+
+    .journey{
+        font-size: 6rem;
+    }
+
+    .first-letter{
+        font-size: 8rem;
+    }
+
+    .border-bottom{
+        width: 28rem;
+        margin-bottom: 1rem;
+    }
+
+    .with-us{
+        font-size: 2.5rem;
+    }
+
+    .mountain{
+        font-size: 5rem;
+    }
+
+    .line{
+        width: 28rem;
+        margin-bottom: 1rem;
+    }
+
+    .climbing{
+        font-size: 2.3rem;
+    }
+
+    .newsletter-input {
+        max-width: 30rem;
+    }
+
+    .newsletter-form{
+        margin-bottom: 8rem;
+    }
+}
+
+/*For larger screen*/
+@media screen and (min-width: 1280px){
+    .nav-items{
+        margin: 0 2.6rem;
+    }
+
+    .cat{
+        font-size: 2.7rem;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 7rem 0 .5rem 0;
+        margin-left: .5rem;
+        margin-bottom: .5rem;
+        border-radius: 5px;
+    }
+
+
+    .categories{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        grid-gap: .2rem;
+        align-items: center;
+    }
+
+}
+
+/*Animation*/
+@keyframes fadeUp {
+    0%{
+        transform: translateY(4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    0% {
+        transform: translateY(-4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        transform: translateX(5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-5rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes grow {
+     0% {
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+@keyframes up {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+}
